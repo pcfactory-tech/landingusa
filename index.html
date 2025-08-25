@@ -1,83 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- parte en ES por defecto -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pc Factory USA</title>
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-  <nav>
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo-pcfactory.png" alt="Logo pc Factory" width="150">
-      </a>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#">English</a></li>
-        <li><a href="#">Español</a></li>
-        </ul>
-    </div>
-  </nav>
-  <main>
-    <!-- Welcome -->
-    <section id="welcome">
-      <h1>¡Bienvenidos a pc Factory!</h1>
-      <p>Donde la tecnología no tiene límites</p>
-    </section>
-    <!-- Choose your country -->
-     <section id="country">
-      <h2>Escoge tu país para continuar</h2>
-      <div class="row">
-        <div class="col-6 col-md-6">
-          <img src="images/bandera-chile.png" alt="" class="img-fluid">
-          <h3>Chile</h3>
-        </div>
-        <div class="col-6 col-md-6">
-          <img src="images/bandera-peru.png" alt="" class="img-fluid">
-          <h3>Perú</h3>
+  <div id="wrapper">
+    <nav>
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="images/pcfactory-logotipo-oscuro.svg" data-i18n-alt="nav.logoAlt" alt="Logo pc Factory" width="150" />
+        </a>
+        <div>
+          <ul class="d-inline-flex list-unstyled mb-0">
+            <li class="me-2"><a href="#" class="text-white ubuntu-regular lang-switch" data-lang="en">English</a></li>
+            <li><a href="#" class="text-white ubuntu-regular lang-switch" data-lang="es">Español</a></li>
+          </ul>
         </div>
       </div>
-     </section>
-    <!-- Statistics -->
-    <section id="stats">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h4>+40</h4>
-          <p>Tiendas distribuidas en Chile y Perú</p>
+    </nav>
+
+    <main id="main-content" class="container-fluid">
+      <!-- Welcome -->
+      <section id="welcome">
+        <div class="container">
+          <div class="row mt-4 mb-2 text-center">
+            <div class="col-12">
+              <h1 class="ubuntu-bold" data-i18n="welcome.title">¡Bienvenidos a pc Factory!</h1>
+              <p class="ubuntu-light-italic" data-i18n="welcome.subtitle">Donde la tecnología no tiene límites</p>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <h4>+500</h4>
-          <p>Colaboradores</p>
+      </section>
+
+      <!-- Choose your country -->
+      <section id="country">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <h2 class="ubuntu-bold text-center" data-i18n="country.heading">Escoge tu país para continuar</h2>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <div class="button--country d-flex align-items-center justify-content-center">
+                <img src="images/bandera-chile.png" alt="" class="img-fluid me-1" />
+                <h3 data-i18n="country.chile">Chile</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="button--country d-flex align-items-center justify-content-center">
+                <img src="images/bandera-peru.png" alt="" class="img-fluid me-1" />
+                <h3 data-i18n="country.peru">Perú</h3>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <h4>+2M</h4>
-          <p>de visitas mensuales</p>
+      </section>
+
+      <!-- Statistics -->
+      <section id="stats" class="mt-5 mb-2">
+        <div class="container px-3 py-5">
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <div class="stats--card">
+                <h4 class="pcf-green-text ubuntu-black">+40</h4>
+                <p data-i18n="stats.stores">Tiendas distribuidas en Chile y Perú</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="stats--card">
+                <h4 class="pcf-green-text ubuntu-black">+500</h4>
+                <p data-i18n="stats.collaborators">Colaboradores</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="stats--card">
+                <h4 class="pcf-green-text ubuntu-black">+2M</h4>
+                <p data-i18n="stats.visits">de visitas mensuales</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="stats--card">
+                <h4 class="pcf-green-text ubuntu-black">+4M</h4>
+                <p data-i18n="stats.clients">de Clientes que confían en nosotros</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="stats--card">
+                <h4 class="pcf-green-text ubuntu-black">+4.9K</h4>
+                <p><strong class="ubuntu-bold" data-i18n="stats.productsStrong">Productos</strong> <span data-i18n="stats.productsTail">en nuestro catálogo</span></p>
+              </div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="stats--card">
+                <h4 class="pcf-green-text ubuntu-black">+350</h4>
+                <p><strong class="ubuntu-bold" data-i18n="stats.brandsStrong">Marcas</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <h4>+4M</h4>
-          <p>de Clientes que confían en nosotros</p>
-        </div>
-        <div class="col-12 col-md-6">
-          <h4>+4.9K</h4>
-          <p>Productos en nuestro catálogo</p>
-        </div>
-        <div class="col-12 col-md-6">
-          <h4>+350</h4>
-          <p>Marcas</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>Contacto comercial:</p>
-    <p>Chile: Eduvigis Riquelme - eriquelme@pcfactory.cl</p>
-    <p>Perú: Ariana Alvarez - aalvarez-calderon@pcfactory.com.pe</p>
-    <p>USA: Nombre pendiente - Mail pendiente</p>
-  </footer>
+      </section>
+    </main>
+
+    <footer class="text-center px-2 py-2 mt-2">
+      <h6 class="ubuntu-bold" data-i18n="footer.title">Contacto comercial:</h6>
+      <p data-i18n="footer.cl">Chile: Eduvigis Riquelme - eriquelme@pcfactory.cl</p>
+      <p data-i18n="footer.pe">Perú: Ariana Alvarez - aalvarez-calderon@pcfactory.com.pe</p>
+      <p data-i18n="footer.us">USA: Nombre pendiente - Mail pendiente</p>
+    </footer>
+  </div>
 
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- i18n básico sin dependencias -->
+  <script>
+    // Diccionario de traducciones
+    const I18N = {
+      es: {
+        "nav.logoAlt": "Logo pc Factory",
+        "welcome.title": "¡Bienvenidos a pc Factory!",
+        "welcome.subtitle": "Donde la tecnología no tiene límites",
+        "country.heading": "Escoge tu país para continuar",
+        "country.chile": "Chile",
+        "country.peru": "Perú",
+        "stats.stores": "Tiendas distribuidas en Chile y Perú",
+        "stats.collaborators": "Colaboradores",
+        "stats.visits": "de visitas mensuales",
+        "stats.clients": "de Clientes que confían en nosotros",
+        "stats.productsStrong": "Productos",
+        "stats.productsTail": "en nuestro catálogo",
+        "stats.brandsStrong": "Marcas",
+        "footer.title": "Contacto comercial:",
+        "footer.cl": "Chile: Eduvigis Riquelme - eriquelme@pcfactory.cl",
+        "footer.pe": "Perú: Ariana Alvarez - aalvarez-calderon@pcfactory.com.pe",
+        "footer.us": "USA: Nombre pendiente - Mail pendiente",
+      },
+      en: {
+        "nav.logoAlt": "pc Factory logo",
+        "welcome.title": "Welcome to pc Factory!",
+        "welcome.subtitle": "Where technology has no limits",
+        "country.heading": "Choose your country to continue",
+        "country.chile": "Chile",
+        "country.peru": "Peru",
+        "stats.stores": "Stores across Chile and Peru",
+        "stats.collaborators": "Team members",
+        "stats.visits": "monthly visits",
+        "stats.clients": "customers who trust us",
+        "stats.productsStrong": "Products",
+        "stats.productsTail": "in our catalog",
+        "stats.brandsStrong": "Brands",
+        "footer.title": "Business contact:",
+        "footer.cl": "Chile: Eduvigis Riquelme - eriquelme@pcfactory.cl",
+        "footer.pe": "Peru: Ariana Alvarez - aalvarez-calderon@pcfactory.com.pe",
+        "footer.us": "USA: Name pending - Email pending",
+      }
+    };
+
+    // Aplica un idioma al DOM
+    function applyLang(lang) {
+      const dict = I18N[lang] || I18N.es;
+      document.documentElement.lang = lang;
+      // Textos
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.textContent = dict[key];
+      });
+      // Atributos (ej: alt)
+      document.querySelectorAll("[data-i18n-alt]").forEach(el => {
+        const key = el.getAttribute("data-i18n-alt");
+        if (dict[key]) el.setAttribute("alt", dict[key]);
+      });
+      localStorage.setItem("lang", lang);
+      // Marcar link activo (opcional)
+      document.querySelectorAll(".lang-switch").forEach(a => {
+        a.classList.toggle("fw-bold", a.dataset.lang === lang);
+      });
+    }
+
+    // Detecta preferencia guardada o del navegador
+    const saved = localStorage.getItem("lang");
+    const browserLang = (navigator.language || "es").slice(0,2);
+    applyLang(saved || (browserLang === "en" ? "en" : "es"));
+
+    // Listeners de los links de idioma
+    document.querySelectorAll(".lang-switch").forEach(a => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        applyLang(a.dataset.lang);
+      });
+    });
+  </script>
 </body>
 </html>
