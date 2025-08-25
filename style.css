@@ -68,6 +68,13 @@
   color: #ffffff
 }
 
+@media (min-width: 768px) {
+  #wrapper {
+    background-image: url("./images/fondo-desktop.png");
+    min-height: 400px;
+  }
+}
+
 
 /* Navigation Styles */
 
@@ -114,8 +121,10 @@ nav {
 }
 
 /* Statistics Section */
-#stats {
+
+#stats-cards {
   background-color: #000000;
+  padding: 20px;
 }
 
 .stats--card {
@@ -154,4 +163,16 @@ footer h6 {
 footer p {
   margin: 5px 0;
   font-size: 0.7em;
+}
+#footer-contact * {
+  margin: 2px 5px;
+}
+
+@media (min-width: 768px) {
+  footer h6 {
+    font-size: 1em;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
 }

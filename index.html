@@ -42,14 +42,14 @@
           <div class="row text-center mb-3">
             <h2 class="ubuntu-bold text-center" data-i18n="country.heading">Escoge tu país para continuar</h2>
           </div>
-          <div class="row">
-            <div class="col-6 col-md-6">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-2">
               <div class="button--country d-flex align-items-center justify-content-center">
                 <img src="images/bandera-chile.png" alt="" class="img-fluid me-1" />
                 <h3 data-i18n="country.chile">Chile</h3>
               </div>
             </div>
-            <div class="col-6 col-md-6">
+            <div class="col-6 col-md-2">
               <div class="button--country d-flex align-items-center justify-content-center">
                 <img src="images/bandera-peru.png" alt="" class="img-fluid me-1" />
                 <h3 data-i18n="country.peru">Perú</h3>
@@ -62,38 +62,38 @@
       <!-- Statistics -->
       <section id="stats" class="mt-5 mb-2">
         <div class="container px-3 py-5">
-          <div class="row">
-            <div class="col-6 col-md-6">
+          <div class="row" id="stats-cards">
+            <div class="col-6 col-md-2">
               <div class="stats--card">
                 <h4 class="pcf-green-text ubuntu-black">+40</h4>
                 <p data-i18n="stats.stores">Tiendas distribuidas en Chile y Perú</p>
               </div>
             </div>
-            <div class="col-6 col-md-6">
+            <div class="col-6 col-md-2">
               <div class="stats--card">
                 <h4 class="pcf-green-text ubuntu-black">+500</h4>
                 <p data-i18n="stats.collaborators">Colaboradores</p>
               </div>
             </div>
-            <div class="col-6 col-md-6">
+            <div class="col-6 col-md-2">
               <div class="stats--card">
                 <h4 class="pcf-green-text ubuntu-black">+2M</h4>
                 <p data-i18n="stats.visits">de visitas mensuales</p>
               </div>
             </div>
-            <div class="col-6 col-md-6">
+            <div class="col-6 col-md-2">
               <div class="stats--card">
                 <h4 class="pcf-green-text ubuntu-black">+4M</h4>
                 <p data-i18n="stats.clients">de Clientes que confían en nosotros</p>
               </div>
             </div>
-            <div class="col-6 col-md-6">
+            <div class="col-6 col-md-2">
               <div class="stats--card">
                 <h4 class="pcf-green-text ubuntu-black">+4.9K</h4>
                 <p><strong class="ubuntu-bold" data-i18n="stats.productsStrong">Productos</strong> <span data-i18n="stats.productsTail">en nuestro catálogo</span></p>
               </div>
             </div>
-            <div class="col-6 col-md-6">
+            <div class="col-6 col-md-2">
               <div class="stats--card">
                 <h4 class="pcf-green-text ubuntu-black">+350</h4>
                 <p><strong class="ubuntu-bold" data-i18n="stats.brandsStrong">Marcas</strong></p>
@@ -105,10 +105,14 @@
     </main>
 
     <footer class="text-center px-2 py-2 mt-2">
-      <h6 class="ubuntu-bold" data-i18n="footer.title">Contacto comercial:</h6>
-      <p data-i18n="footer.cl">Chile: Eduvigis Riquelme - eriquelme@pcfactory.cl</p>
-      <p data-i18n="footer.pe">Perú: Ariana Alvarez - aalvarez-calderon@pcfactory.com.pe</p>
-      <p data-i18n="footer.us">USA: Nombre pendiente - Mail pendiente</p>
+      <div class="container">
+        <div class="row d-md-flex justify-content-center flex-md-row" id="footer-contact">
+            <h6 class="ubuntu-bold" data-i18n="footer.title">Contacto comercial: </h6>
+            <p data-i18n="footer.cl">Chile: Eduvigis Riquelme - eriquelme@pcfactory.cl</p>
+            <p data-i18n="footer.pe">Perú: Ariana Alvarez - aalvarez-calderon@pcfactory.com.pe</p>
+            <p data-i18n="footer.us">USA: Nombre pendiente - Mail pendiente</p>
+        </div>
+      </div>
     </footer>
   </div>
 
